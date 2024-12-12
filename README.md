@@ -1,7 +1,7 @@
 # CS 132 Web Development Final Project: Tinder for Athletes
 
 ## Overview
-This project implements the Tinder for Athletes API and front end website to create an experience for user's to find other athletes to play sports with.
+This project implements the Tinder for Athletes API and front end website to create an experience for user's to find other athletes to play sports with. Not all aspects of the implemented databse are currently used, and the project will be further implemented in the future to implement a group and chat feature.
 
 ## API Documentation
 1. GET /cards
@@ -61,4 +61,4 @@ final-project/
 └── package.json                 # Node.js project configuration
 ```
 ## Authors
-Georgia Malueg is the sole contributer to all html, css, and javascript files. The sequel database was built collaboratively with Georgia Malueg, Skye Ruedas, and Thierno Diallo.
+Georgia Malueg is the sole contributer to all html, css, and javascript files. The SQL database was built collaboratively with Georgia Malueg, Skye Ruedas, and Thierno Diallo.
