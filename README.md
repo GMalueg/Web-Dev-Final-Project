@@ -54,7 +54,7 @@ This project implements the Tinder for Athletes API and front end website to cre
          - experience_level='2'
          - preferred_day='Monday'
          - bio='I am a student in CS 132.'
-   - Errors:
+   - hi Errors:
       - 
 
 ## File Structure
