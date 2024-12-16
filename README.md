@@ -39,13 +39,16 @@ This project implements the Tinder for Athletes API and front end website to cre
 ## File Structure
 ```
 final-project/
-├── index.html           # the main page for logging into tinder for athletes
-├── product.html
-├── styles.css           # front-end styles for index.html
-├── signup-styles.css
+├── public/
+│   ├── index.html           # the main page for logging into tinder for athletes
+│   ├── styles.css           # front-end styles for index.html
+│   ├── signup.html
+│   ├── signup-styles.css
+│   ├── cards.html
+│   ├── cards-styles.css
+│   ├── functionality.js
+│   ├── utils.js
 ├── app.js
-├── forms.js
-├── utils.js
 ├── data/
 │   ├── users.csv
 │   └── cards.csv
