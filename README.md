@@ -25,8 +25,8 @@ This project implements the Tinder for Athletes API and front end website to cre
       - POST body parameters:
          - email='gmalueg@caltech.edu'
          - password='pass'
+   - Error handling:
    - Errors:
-      - 
   
 3. POST /createAccount
    - Description: Submit user and card information to create an account.
