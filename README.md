@@ -12,7 +12,19 @@ This project implements the Tinder for Athletes API and front end website to cre
        - preferred_day (required): the user's preferred day to play sports
    - Response: JSON array of card objects. A card will appear on the user's screen.
    - Example response:
+   - JSON
+        {
+          "first_name": "Georgia",
+          "last_name": "Malueg",
+          "sport": "Soccer",
+          "experience_level": 2,
+          "preferred_day": "Monday",
+          "home_state": "FL",
+          "bio": "I am a student in CS 132."
+        }
    - Error handling:
+      - 400 Bad Request: if parameters are missing
+      - 500 Internal Server Error: if there are database issues
 
 2. POST /login
    - Description: Submit a login request.
@@ -25,6 +37,8 @@ This project implements the Tinder for Athletes API and front end website to cre
          - email='gmalueg@caltech.edu'
          - password='pass'
    - Error handling:
+      - 400 Bad Request: if required fields are missing
+      - 401 Unauthorized: if credentials are not valid
   
 3. POST /createAccount
    - Description: Submit user and card information to create an account.
@@ -53,6 +67,7 @@ This project implements the Tinder for Athletes API and front end website to cre
          - preferred_day='Monday'
          - bio='I am a student in CS 132.'
    - Error handling:
+      - 400 Bad Request: if required fields are missing
 
 ## File Structure
 ```
