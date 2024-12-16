@@ -6,18 +6,28 @@ This project implements the Tinder for Athletes API and front end website to cre
 ## API Documentation
 1. GET /cards
    - Description: Retrieve a list of all cards in the database.
+   - Returned data format: JSON
    - Query Parameters:
        - home_state (required): the user's home state
        - preferred_day (required): the user's preferred day to play sports
-   - Response: JSON array of card objects.
+   - Response: JSON array of card objects. A card will appear on the user's screen.
+   - Example response:
+   - Error Handling:
+      - 
 
 2. POST /login
    - Description: Submit a login request.
    - Request Body:
-       - gmail (required): the user's gmail used to login.
+       - email (required): the user's gmail used to login.
        - password (required): the user's password to login.
-   - Response: Redirect to page where you swipe on users cards
-
+   - Response: Redirect to page where you swipe on users cards.
+   - Example Request: /login
+      - POST body parameters:
+         - email='gmalueg@caltech.edu'
+         - password='pass'
+   - Error Handling:
+      - 
+  
 3. POST /createAccount
    - Description: Submit user and card information to create an account.
    - Request Body:
@@ -30,11 +40,22 @@ This project implements the Tinder for Athletes API and front end website to cre
        - sport (required): the sport the user is looking to find people to play with
        - experience_level (required): experience level in the given sport (range of 1-10)
        - preferred_day (required): the preferred day of the week to meet up to play the sport (Monday, Tuesday, ...)
-       - bio (required): user's bio
-   - Response: Redirect to login page and success message.
-
-## Error Handling
-
+       - bio (optional): user's bio
+   - Response: Success message.
+   - Example Request: /createAccount
+      - POST body parameters:
+         - first_name='Georgia'
+         - last_name='Malueg'
+         - email='gmalueg@caltech.edu'
+         - password='pass'
+         - birthday='11-24-2002'
+         - home_state='FL'
+         - sport='Soccer'
+         - experience_level='2'
+         - preferred_day='Monday'
+         - bio='I am a student in CS 132.'
+   - Error Handling:
+      - 
 
 ## File Structure
 ```
