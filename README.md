@@ -11,6 +11,9 @@ This project implements the Tinder for Athletes API and front end website to cre
        - home_state (required): the user's home state
        - preferred_day (required): the user's preferred day to play sports
    - Response: JSON array of card objects. A card will appear on the user's screen.
+   - Query Parameters:
+      - home_state (required): The user's home state
+      - sport_name (required): The sport the user is interested in finding other people to play with
    - Example response:
    - JSON
         {
@@ -25,8 +28,23 @@ This project implements the Tinder for Athletes API and front end website to cre
    - Error handling:
       - 400 Bad Request: if parameters are missing
       - 500 Internal Server Error: if there are database issues
-
-2. POST /login
+2. GET /user-info
+   - Description: Get the logged-in user's home state and chosen sport based on their email
+   - Query Parameters:
+       - email (required): The user's email
+   - Response: JSON object that contains home_state and sport_name.
+   - Example Request: GET /user-info?email=gmalueg@gmail.com
+   - Example response:
+   - JSON
+     {
+        "home_state": "CA",
+        "sport_name": "Soccer"
+     }
+   - Error handling:
+      - 400 Bad Request: if the email parameter is missing
+      - 404 Not Found: if there isn't data found for the given email
+      - 500 Internal Server Error: if there are database issues
+4. POST /login
    - Description: Submit a login request.
    - Request Body:
        - email (required): the user's gmail used to login.
@@ -40,7 +58,7 @@ This project implements the Tinder for Athletes API and front end website to cre
       - 400 Bad Request: if required fields are missing
       - 401 Unauthorized: if credentials are not valid
   
-3. POST /createAccount
+5. POST /createAccount
    - Description: Submit user and card information to create an account.
    - Request Body:
        - first_name (required): user's first name
