@@ -11,9 +11,6 @@ This project implements the Tinder for Athletes API and front end website to cre
        - home_state (required): the user's home state
        - preferred_day (required): the user's preferred day to play sports
    - Response: JSON array of card objects. A card will appear on the user's screen.
-   - Query Parameters:
-      - home_state (required): The user's home state
-      - sport_name (required): The sport the user is interested in finding other people to play with
    - Example response:
    - JSON
         {
