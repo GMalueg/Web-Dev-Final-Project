@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+  Author: Georgia Malueg
+
+  CS 132 Fall 2024
+  Date: 12/12/2024
+
+ This is the cards.html file of the final project to allow users to see other
+ users cards that are similar.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder for Athletes - Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cards-styles.css" />
+    <link rel="shortcut icon" href="#" />
+    <script src="utils.js"></script>
+    <script defer src="functionality.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Find Your Match</h1>
+        <h3>Swipe through cards to find your new sports buddy!</h3>
+    </header>
+    <main>
+        <section id="button-section">
+            <button id="find-user-btn">Find User</button>
+            <p id="coming-soon">Coming Soon: Chat with your matches!</p>
+        </section>
+        <section id="card-container">
+            <div id="card" class="hidden">
+                <h2 id="name"></h2>
+                <p>Sport: <span id="sport"></span></p>
+                <p>Experience Level: <span id="experience"></span></p>
+                <p>Preferred Day: <span id="preferred-day"></span></p>
+                <p>Home State: <span id="state"></span></p>
+                <p>Bio:</p>
+                <p id="bio"></p>
+            </div>            
+            <div class="buttons">
+                <button id="no-btn">No</button>
+                <button id="match-btn">Match</button>
+            </div>  
+        </section>
+    </main>
+    <footer>
+        <h2> Have a great time with your new sports buddy!</h2>
+    </footer>
+</html>

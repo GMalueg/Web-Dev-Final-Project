@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+  Author: Georgia Malueg
+
+  CS 132 Fall 2024
+  Date: 11/13/2024
+
+ This is the index.html file of the final project. It is a login page for the user to login. 
+ If the user doesn't have a login, then they are redirected to the signup page.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder for Athletes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#" />
+    <script src="utils.js"></script>
+    <script defer src="functionality.js"></script>
+</head>
+<body>
+    <header>
+        <h1> Welcome to Tinder for Athletes! </h1>
+        <h3> Where athletes meet up to play sports! </h3>
+    </header>
+    <main>
+        <!-- turned this into a class -->
+        <div class = "col-imgs">
+            <img src="imgs/baseball.jpg" alt="Baseball">
+            <img src="imgs/basketball.jpg" alt="Basketball">
+            <img src="imgs/cycling.png" alt="Cycling">
+        </div>
+        <section id = "login">
+            <h2> Please login to your account. </h2>
+            <form id="login-form">
+                <div>
+                    <label for="username">Username (max length of 20, min length of 4):</label>
+                    <input type="text" id="username" name="username" required minlength="4" maxlength="20"/>
+                </div>
+                
+                <div>
+                    <label for="pass">Password (max length of 20, min length of 4):</label>
+                    <input type="password" id="pass" name="password" minlength="4" required maxlength="36"/>
+                </div>
+                <button type="submit">Sign in</button>
+            </form>
+            <h3> <a href="signup.html">Or please create an account here. </a> </h3>
+        </section>
+        <div class="col-imgs">
+            <img src="imgs/soccer.jpg" alt="Soccer ball">
+            <img src="imgs/tennis.jpg" alt="Tennis ball">
+            <img src="imgs/volleyball.jpg" alt="Volleyball">
+        </div>
+    </main>
+    <footer>
+        <h2>Thank you for using Tinder for Athletes!</h2>
+        <p> Images are from UXWing. </p>
+    </footer>
+</body>
+</html>

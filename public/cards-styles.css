@@ -1,0 +1,76 @@
+/**
+  Author: Georgia Malueg
+
+  CS 132 Fall 2024
+  Date: 12/12/2024
+
+  This is the cards-styles.css file for the final project of CS 132.
+*/
+
+main, #card-container, #button-section,  .buttons {
+    display: flex;
+}
+
+main, #card-container {
+    justify-content: space-between;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+main {
+    width: 90%;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#find-user-btn, #match-btn, #no-btn {
+    color: white;
+}
+
+#find-user-btn {
+    background-color: #ffa500;
+    font-size: 20px;
+}
+
+#match-btn {
+    background-color: #4caf50;
+}
+
+#no-btn {
+    background-color: #f44336;
+}
+
+#card-container, #button-section {
+    flex-direction: column;
+}
+
+#card-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 60%;
+    text-align: left;
+    min-height: 300px;
+}
+
+#button-section {
+    align-items: center;
+    gap: 50px;
+}
+
+#coming-soon {
+    font-size: 14px;
+    color: #5a5959;
+}
+
+.buttons {
+    justify-content: center;
+    margin-top: 20px;
+}
